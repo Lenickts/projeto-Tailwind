@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* O @theme é a diretiva de personalização do tailwind, porém não suportada na versao 4 (versão mais atual)  
+
+@theme {
+    --color-mint-500: oklch(0.72 0.11 178);
+  } 
+  
+  Deixei um modelo aqui, mas foi substituido pelo :root
+  
+  */
+
+
+:root {
+  --color-blue-500: oklch(0.6359 0.1 203);
+}
