@@ -8,6 +8,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
+    <!-- HEADER -->
     <header class="bg-white shadow-md p-4 sticky top-0 z-50">
         <nav class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold text-indigo-600">Pet&Style</h1>
@@ -20,14 +21,29 @@
             </nav>
     </header>
 
-    <section class="bg-indigo-600 text-white py-16 text-center">
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Estilo e Conforto para seu Melhor Amigo</h2>
-        <p class="text-lg md:text-xl mb-8">Descubra nossa coleção exclusiva de produtos para pets com design e qualidade.</p>
-        <button class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+    <!-- SLIDES -->
+    <section class="relative h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+        <!-- Slides de fundo -->
+        <div class="absolute inset-0">
+          <div class="slide absolute inset-0 w-full h-full opacity-100 transition-opacity duration-1000" data-bg="img/slide/img1.png"></div>
+          <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000" data-bg="img/slide/img2.jpg"></div>
+          <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000" data-bg="img/slide/img3.jpg"></div>
+          <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000" data-bg="img/slide/img4.jpg"></div>
+          <!-- camada escura para contraste -->
+          <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+      
+        <!-- Conteúdo por cima -->
+        <div class="relative z-10 px-4 max-w-4xl mx-auto">
+          <h2 class="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Estilo e Conforto para seu Melhor Amigo</h2>
+          <p class="text-lg md:text-xl mb-8 drop-shadow-md">Descubra nossa coleção exclusiva de produtos para pets com design e qualidade.</p>
+          <a href="#produtos" class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
             Explorar Produtos
-        </button>
-    </section>
+          </a>
+        </div>
+      </section>
 
+    <!-- CORPO PRINCIPAL -->
     <section id="produtos" class="container mx-auto py-16 px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nossos Produtos</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -115,6 +131,6 @@
     <footer class="bg-gray-800 text-white py-6 text-center">
         <p>&copy; 2024 Pet&Style. Todos os direitos reservados.</p>
     </footer>
-
+<script src="src/script.js"></script>
 </body>
 </html>

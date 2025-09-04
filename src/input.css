@@ -14,3 +14,20 @@
 :root {
   --color-blue-500: oklch(0.6359 0.1 203);
 }
+
+/* Slideshow customizado */
+.slide-1 {
+  background: url('../img/slide/img1.png') center/cover no-repeat;
+}
+
+.slide-2 {
+  background: url('../img/slide/img2.jpg') center/cover no-repeat;
+}
+
+.slide-3 {
+  background: url('../img/slide/img3.jpg') center/cover no-repeat;
+}
+
+.slide-4 {
+  background: url('../img/slide/img4.jpg') center/cover no-repeat;
+}
